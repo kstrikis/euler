@@ -4,14 +4,12 @@
 import math
 composite = 600851475143
 factor = 1.0 # need decimal remainders
-lgfactor = 1
 while(1):
     factor = factor + 2
     decimal = composite/factor - math.floor(composite/factor)
-    if decimal == 0:
-        if factor > lgfactor:
-            lgfactor = factor
+    while(decimal==0):
         composite = composite/factor
+        decimal = composite/factor - math.floor(composite/factor)
     if factor > composite:
         break
-print(lgfactor)
+print(factor)
