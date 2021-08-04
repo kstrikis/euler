@@ -7,8 +7,8 @@ factor = 1.0 # need decimal remainders
 lgfactor = 1
 while(1):
     factor = factor + 2
-    remainder = composite/factor - math.floor(composite/factor)
-    if remainder == 0:
+    decimal = composite/factor - math.floor(composite/factor)
+    if decimal == 0:
         if factor > lgfactor:
             lgfactor = factor
         composite = composite/factor
