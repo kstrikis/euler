@@ -1,4 +1,4 @@
-## kstrikis' solution for project euler problem 4
+## kstrikis' solution for project euler problem 5
 ## released under The Unlicense
 ## What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 ## the answer will be the product of all primes less than 20 times
